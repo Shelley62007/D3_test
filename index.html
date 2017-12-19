@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>畫個長條圖</title>
+    <!-->開新檔案: !+TAB</!-->
+    <!-->*不曉得為什麼只能跑一條出來...</!-->
+    <script
+    src="https://d3js.org/d3.v3.min.js">
+    </script>
+</head>
+<body>
+    <script>
+        var svg = d3.select("body")
+            .append("svg").attr({
+            width: 600,
+            height: 1000,
+        });
+        
+        svg.append("rect")
+            .attr({
+            x: 10,
+            y: 10+15*0,
+            width: 20*1,
+            height: 10,
+            fill: "red"
+        });
+        
+        svg.append("rect")
+            .attr({
+            x: 10,
+            y: 10+15*1,
+            width: 20*2,
+            heigh: 10,
+            fill: "red"
+        });
+        
+        svg.append("rect")
+            .attr({
+            x: 10,
+            y: 10+15*2,
+            width: 20*3,
+            heigh: 10,
+            fill: "red"
+        });
+        
+    </script>
+</body>
+</html>
